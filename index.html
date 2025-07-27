@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFusión - Soluciones Tecnológicas Integrales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Encabezado -->
+    <header class="bg-blue-900 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50" alt="Logo TechFusión" class="mr-2">
+                <h1 class="text-2xl font-bold">TechFusión</h1>
+            </div>
+            <nav class="space-x-4">
+                <a href="#inicio" class="hover:text-blue-300">Inicio</a>
+                <a href="#servicios" class="hover:text-blue-300">Servicios</a>
+                <a href="#ventajas" class="hover:text-blue-300">Ventajas</a>
+                <a href="#clientes" class="hover:text-blue-300">Clientes</a>
+                <a href="#contacto" class="hover:text-blue-300">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="bg-blue-700 text-white py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4">Soluciones Tecnológicas Integrales</h2>
+            <p class="text-lg max-w-2xl mx-auto">En TechFusión, ofrecemos soluciones completas y profesionales en redes de telecomunicaciones, seguridad electrónica, control de acceso y automatización para hogares, comercios e industrias en Uruguay.</p>
+            <a href="#contacto" class="mt-6 inline-block bg-yellow-500 text-black py-2 px-6 rounded-full hover:bg-yellow-600">Solicita una Cotización</a>
+        </div>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section id="servicios" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-network-wired text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Redes de Telecomunicaciones</h3>
+                    <p>Instalación de fibra óptica (FTTH), redes Ethernet y Wi-Fi empresariales con segmentación avanzada (VLANs, QoS).</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-camera text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Seguridad Electrónica</h3>
+                    <p>Sistemas de videovigilancia CCTV con IA, alarmas y vídeo porteros con monitoreo remoto.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-fingerprint text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Control de Acceso</h3>
+                    <p>Soluciones biométricas, RFID y móviles integradas con software de gestión.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-home text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Domótica</h3>
+                    <p>Automatización de puertas, luces, cámaras y climatización con control remoto.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-headset text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Consultoría y Soporte</h3>
+                    <p>Diseño de proyectos a medida y soporte técnico profesional pre y post venta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de ventajas competitivas -->
+    <section id="ventajas" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestras Ventajas</h2>
+            <ul class="list-disc max-w-2xl mx-auto text-lg space-y-4">
+                <li>Personal altamente capacitado y certificado.</li>
+                <li>Dominio de marcas líderes: Hikvision, Huawei, ZKTeco, entre otras.</li>
+                <li>Capacidad para proyectos complejos con atención personalizada.</li>
+                <li>Soporte técnico profesional con herramientas avanzadas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de clientes -->
+    <section id="clientes" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestros Clientes</h2>
+            <p class="text-lg max-w-2xl mx-auto text-center">Trabajamos con propietarios de viviendas, empresas medianas y grandes, instituciones públicas/privadas, estudios de arquitectura y comercios que buscan soluciones tecnológicas integradas.</p>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="bg-blue-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contáctanos</h2>
+            <div class="max-w-lg mx-auto">
+                <div id="form-message" class="hidden text-center mb-4"></div>
+                <form id="contact-form" onsubmit="handleSubmit(event)" class="space-y-4">
+                    <input type="text" name="name" placeholder="Nombre" required class="w-full p-3 rounded-md text-black">
+                    <input type="email" name="email" placeholder="Correo Electrónico" required class="w-full p-3 rounded-md text-black">
+                    <textarea name="message" placeholder="Mensaje" required class="w-full p-3 rounded-md text-black h-32"></textarea>
+                    <button type="submit" class="bg-yellow-500 text-black py-2 px-6 rounded-full hover:bg-yellow-600">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>TechFusión - Soluciones Tecnológicas Integrales en Uruguay</p>
+            <p class="mt-2">Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="20434f4e544143544f6054454348465553494f4e55590e434f4d">[email&#160;protected]</a> | Tel: +598 1234 5678</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-blue-300"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-300"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const messageDiv = document.getElementById('form-message');
+            messageDiv.classList.remove('hidden', 'text-red-500', 'text-green-500');
+            messageDiv.classList.add('text-green-500');
+            messageDiv.textContent = '¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.';
+            form.reset();
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'965dd89d69144e64',t:'MTc1MzYzNzIzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
